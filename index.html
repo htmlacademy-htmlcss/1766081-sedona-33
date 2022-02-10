@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -50,13 +51,15 @@
       <h1 class="visually-hidden">Седона</h1>
       <!-- Приветствие -->
       <div class="welcome">
-        <img class="welcome-image" src="img/index/svg/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona. &ldquo;Because the Grand Canyon sucks!&ldquor;">
+        <div class="welcome-divider">
+          <img class="welcome-image" src="img/index/svg/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona. &ldquo;Because the Grand Canyon sucks!&ldquor;">
+        </div>
       </div>
       <!-- Преимущества -->
       <section class="advantages">
         <!-- Шапка преимуществ -->
         <header class="advantages-header">
-          <h2 class="advantages-header-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="advantages-header-title section-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="advantages-header-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </header>
         <!-- Список преимуществ -->
@@ -71,7 +74,7 @@
               </div>
               <!-- Картинка 1 -->
               <img class="advantages-photo" src="img/index/advantages-townscape.jpg" width="800" heigh="384" alt="Внешний облик города Седоны">
-            <!-- Белые блоки с декоративными иконками -->
+            <!-- Блоки с декоративными иконками -->
             <ul class="features-list">
               <li class="features-item">
                 <div class="features-housing advantages-block">
@@ -132,13 +135,13 @@
         </section>
         <!-- Поиск гостиницы -->
         <section class="find-hotel">
-          <h2 class="find-hotel-title">Заинтересовались?</h2>
+          <h2 class="find-hotel-title section-title">Заинтересовались?</h2>
           <p class="find-hotel-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="find-hotel-button button modal-button" href="catalog.html">Поиск гостиницы в Cедоне</a>
       </section>
       <!-- Подписка -->
-      <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+      <section class="subscribe main-subscribe">
+        <h2 class="subscribe-title section-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="email" class="visually-hidden">Ваш e-mail</label>
