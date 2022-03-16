@@ -47,7 +47,7 @@
     </header>
 
     <!-- Содержимое страницы -->
-    <main class="main-index">
+    <main class="main-index main-container">
       <h1 class="visually-hidden">Седона</h1>
       <!-- Приветствие -->
       <div class="welcome">
@@ -66,30 +66,33 @@
         <ol class="advantages-list">
           <!-- Преимущество 1 -->
           <li class="advantages-item">
-            <!-- Блок 1 -->
-              <div class="advantages-block views-block">
+            <!-- Обёртка для преимущества с изображением -->
+            <div class="view-wrapper">
+              <!-- Блок 1 -->
+              <div class="advantages-block views-block advantages-block-first">
                 <h3 class="advantages-title">Настоящий<br>городок</h3>
                 <span class="advantages-number">— №1 —</span>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <!-- Картинка 1 -->
               <img class="advantages-photo" src="img/index/advantages-townscape.jpg" width="800" heigh="384" alt="Внешний облик города Седоны">
+            </div>
             <!-- Блоки с декоративными иконками -->
             <ul class="features-list">
               <li class="features-item">
-                <div class="features-housing advantages-block">
+                <div class="features-housing features-block advantages-block">
                   <h3 class="features-title advantages-title">Жильё</h3>
                   <p class="features-description advantages-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
               </div>
               </li>
               <li class="features-item">
-                <div class="features-food advantages-block">
+                <div class="features-food features-block advantages-block">
                   <h3 class="features-title advantages-title">Еда</h3>
                   <p class="features-description advantages-description">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
                 </div>
               </li>
               <li class="features-item">
-                <div class="features-souvenir advantages-block">
+                <div class="features-souvenir features-block advantages-block">
                   <h3 class="features-title advantages-title">Сувениры</h3>
                   <p class="features-description advantages-description">Не только китайского,<br>но и настоящего местного производства!</p>
                 </div>
@@ -98,13 +101,16 @@
           </li>
           <!-- Преимущество 2 -->
           <li class="advantages-item">
-            <!-- Картинка 2 -->
-            <img class="advantages-photo" src="img/index/advantages-devils-bridge.jpg" width="800" heigh="384" alt="Мост Дьявола">
-            <!-- Блок 2 -->
-            <div class="advantages-block views-block">
-              <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
-              <span class="advantages-number">— №2 —</span>
-              <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <!-- Обёртка для преимущества с изображением -->
+            <div class="view-wrapper">
+              <!-- Картинка 2 -->
+              <img class="advantages-photo" src="img/index/advantages-devils-bridge.jpg" width="800" heigh="384" alt="Мост Дьявола">
+              <!-- Блок 2 -->
+              <div class="advantages-block views-block">
+                <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
+                <span class="advantages-number">— №2 —</span>
+                <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
             </div>
           </li>
           <!-- Преимущество 3 -->
@@ -154,32 +160,34 @@
     <!-- Футер -->
     <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
-      <!-- Ссылки на социальные сети -->
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="social-button" href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidden">Твиттер</span>
+      <div class="footer-wrapper">
+        <!-- Ссылки на социальные сети -->
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="social-button" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+          <a class="social-button" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Фейсбук</span>
           </a>
-        </li>
-        <li class="footer-social-item">
-        <a class="social-button" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">Фейсбук</span>
+          </li>
+          <li class="footer-social-item">
+            <a class="social-button" href="https://www.youtube.com/c/htmlacademyrus">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Телефон -->
+        <address class="footer-address">
+          <a class="footer-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+        <!-- Баннер HTML Academy -->
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">HTML Academy</span>
         </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="social-button" href="https://www.youtube.com/c/htmlacademyrus">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
-      <!-- Телефон -->
-      <address class="footer-address">
-        <a class="footer-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </address>
-      <!-- Баннер HTML Academy -->
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-        <span class="visually-hidden">HTML Academy</span>
-      </a>
+      </div>
     </footer>
 
   </body>
