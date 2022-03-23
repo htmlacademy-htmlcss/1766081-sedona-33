@@ -18,13 +18,19 @@
         <!-- Главное меню -->
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+            <a class="navigation-link" href="index.html">
+              <span class="navigation-text navigation-text-current">Главная</span>
+            </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
+            <a class="navigation-link" href="#">
+              <span class="navigation-text">О Седоне</span>
+            </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">
+              <span class="navigation-text">Гостиницы</span>
+            </a>
           </li>
         </ul>
         <!-- Пользовательское меню -->
@@ -40,7 +46,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button modal-button navigation-button" href="#">Хочу сюда!</a>
+            <a class="navigation-link navigation-button button modal-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -50,11 +56,11 @@
     <main class="main-index main-container">
       <h1 class="visually-hidden">Седона</h1>
       <!-- Приветствие -->
-      <div class="welcome">
+      <section class="welcome">
         <div class="welcome-divider">
           <img class="welcome-image" src="img/index/svg/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona. &ldquo;Because the Grand Canyon sucks!&ldquor;">
         </div>
-      </div>
+      </section>
       <!-- Преимущества -->
       <section class="advantages">
         <!-- Шапка преимуществ -->
@@ -79,23 +85,17 @@
             </div>
             <!-- Блоки с декоративными иконками -->
             <ul class="features-list">
-              <li class="features-item">
-                <div class="features-housing features-block advantages-block">
-                  <h3 class="features-title advantages-title">Жильё</h3>
-                  <p class="features-description advantages-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
-              </div>
+              <li class="features-housing features-block advantages-block">
+                <h3 class="features-title advantages-title">Жильё</h3>
+                <p class="features-description advantages-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
               </li>
-              <li class="features-item">
-                <div class="features-food features-block advantages-block">
-                  <h3 class="features-title advantages-title">Еда</h3>
-                  <p class="features-description advantages-description">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
-                </div>
+              <li class="features-food features-block advantages-block">
+                <h3 class="features-title advantages-title">Еда</h3>
+                <p class="features-description advantages-description">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="features-item">
-                <div class="features-souvenir features-block advantages-block">
-                  <h3 class="features-title advantages-title">Сувениры</h3>
-                  <p class="features-description advantages-description">Не только китайского,<br>но и настоящего местного производства!</p>
-                </div>
+              <li class="features-souvenir features-block advantages-block">
+                <h3 class="features-title advantages-title">Сувениры</h3>
+                <p class="features-description advantages-description">Не только китайского,<br>но и настоящего местного производства!</p>
               </li>
             </ul>
           </li>
@@ -114,28 +114,22 @@
             </div>
           </li>
           <!-- Преимущество 3 -->
-          <li class="advantages-item">
-            <div class="advantages-block">
-              <h3 class="advantages-title">Небольшая<br>площадь</h3>
-              <span class="advantages-number">— №3 —</span>
-              <p class="advantages-description">Все достопримечательности находятся очень близко</p>
-            </div>
+          <li class="advantages-item advantages-block">
+            <h3 class="advantages-title">Небольшая<br>площадь</h3>
+            <span class="advantages-number">— №3 —</span>
+            <p class="advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
           <!-- Преимущество 4 -->
-            <li class="advantages-item">
-              <div class="advantages-block central-block">
-                <h3 class="advantages-title">Красивая<br>дорога</h3>
-                <span class="advantages-number">— №4 —</span>
-                <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </div>
+            <li class="advantages-item advantages-block central-block">
+              <h3 class="advantages-title">Красивая<br>дорога</h3>
+              <span class="advantages-number">— №4 —</span>
+              <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <!-- Преимущество 5 -->
-            <li class="advantages-item">
-              <div class="advantages-block">
-                <h3 class="advantages-title">Мало<br>туристов</h3>
-                <span class="advantages-number">— №5 —</span>
-                <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
+            <li class="advantages-item advantages-block">
+              <h3 class="advantages-title">Мало<br>туристов</h3>
+              <span class="advantages-number">— №5 —</span>
+              <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ol>
         </section>
@@ -143,7 +137,7 @@
         <section class="find-hotel">
           <h2 class="find-hotel-title section-title">Заинтересовались?</h2>
           <p class="find-hotel-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="find-hotel-button button modal-button" href="catalog.html">Поиск гостиницы в Cедоне</a>
+          <a class="find-hotel-button button modal-button" href="catalog.html">Поиск гостиницы в Cедоне</a>
       </section>
       <!-- Подписка -->
       <section class="subscribe main-subscribe">
